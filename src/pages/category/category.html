@@ -1,0 +1,16 @@
+<ion-content>
+  <div class="container">
+    <div class="header">
+      <h1>{{title}}</h1>
+    </div>
+    <div *ngFor="let n of QuizzData; let i = index" class="category">
+      <div (click)="toPage2(n.questions, n.categoryName)" class="flexer">
+        <div class="label"> <p> {{n.categoryName}} </p> </div>
+        <div class="icon"><i class="fas fa-chevron-right"></i></div>
+      </div>
+    </div>
+    <div class="category">
+      <button ion-button full (click)="goBack()" >Home</button>
+    </div>
+  </div>
+</ion-content>

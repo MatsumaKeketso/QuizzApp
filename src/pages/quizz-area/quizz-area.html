@@ -1,0 +1,30 @@
+<ion-content>
+
+  <div class="header">
+    <h1 *ngIf="title"> {{title}}</h1>
+  </div>
+  <div class="questions">
+    <ion-slides #slides>
+
+      <ion-slide *ngFor="let n of data; let i = index">
+        <div class="title">
+          <p> Question {{i + 1}} </p>
+          <h1> {{n.question}} </h1>
+        </div>
+        <div class="options">
+          <ion-list>
+              <button ion-item *ngFor="let b of n.options; let o = index" (click)="answer(b.correct)">
+                {{ b.option }}
+              </button>
+            </ion-list>
+        </div>
+      </ion-slide>
+      <ion-slide >
+        <div class="lastSlide">
+            <button ion-button full round (click)="toTotal()" >See Score</button>
+        </div>
+
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

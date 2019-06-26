@@ -1,0 +1,44 @@
+page-quizz-area {
+  .content{
+    background:linear-gradient(rgba(0, 0, 0, 0.596)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR01hKjZONwFOLS5DNXGlK4Okm2L4y2alrPD0AKhArWARFDz4Uj);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .header{
+    padding: 20px;
+    font-family: Typo Grotesk;
+    h1{
+      font-size: 54px;
+      color: #FF4519;
+      text-shadow: 2px 2px 5px #00000033;
+    }
+  }
+  .questions{
+    box-shadow: 0px 0px 10px #00000038;
+    overflow: hidden;
+    background: linear-gradient(rgba(255, 255, 255, 0.116));
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    filter: blur(0px);
+    h1{
+      font-family: TimeBurner;
+      font-size: 20px;
+      padding: 20px 10px;
+      font-weight: bold;
+    }
+    .slides{
+      .item{
+        filter: blur(0px);
+        background: none;
+        color: white;
+      }
+    }
+  }
+  .lastSlide{
+    width: 100%;
+    padding-top: 40%;
+  }
+}

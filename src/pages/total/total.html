@@ -1,0 +1,17 @@
+<ion-content>
+<div [class]="className" class="normal">
+  <h1>{{title}}</h1>
+</div>
+<div [class]="className" class="score">
+    <h1> {{grandTotal}}% </h1>
+</div>
+<div class="message">
+  <p>{{message}}</p>
+</div>
+<div *ngIf="grandTotal<90" class="buttons">
+  <button id="try" (click)="tryAgain()">Try again</button><button id="next" (click)="nextTime()">Next Time</button>
+</div>
+<div *ngIf="grandTotal>90"  class="amazing">
+  <button (click)="tryAgain()">Another One</button>
+</div>
+</ion-content>
