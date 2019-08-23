@@ -56,4 +56,7 @@ export class TotalPage {
     this.totalProvider.resetScore();
     this.navCtrl.push(HomePage);
   }
+  category(){
+    this.navCtrl.push(CategoryPage);
+  }
 }
